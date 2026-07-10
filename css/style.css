@@ -341,3 +341,172 @@ body {
     transform: translateY(-3px);
 
 }
+
+/* ==========================================
+   SEÇÃO SOBRE
+========================================== */
+
+.sobre {
+    padding: 100px 0;
+    background-color: var(--cor-branca);
+}
+
+.sobre .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+.sobre-imagem {
+    flex: 1;
+}
+.sobre-imagem img{
+    width:100%;
+    max-width:520px;
+    display:block;
+    border-radius:20px;
+    object-fit:cover;
+    box-shadow:0 15px 40px rgba(0,0,0,.12);
+}
+
+.sobre-conteudo {
+    flex: 1;
+}
+
+.subtitulo {
+    display: inline-block;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--cor-primaria);
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.sobre-conteudo h2 {
+    margin-bottom: 25px;
+    font-size: 2.2rem;
+    color: var(--cor-titulo);
+}
+
+.sobre-conteudo p {
+    margin-bottom: 18px;
+    color: var(--cor-texto);
+    line-height: 1.8;
+}
+
+/* ==========================================
+   SEÇÃO SERVIÇOS
+========================================== */
+
+.servicos {
+    padding: 100px 0;
+    background: #f8fafc;
+}
+
+.titulo-secao {
+    max-width: 700px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.titulo-secao h2 {
+    margin: 20px 0;
+    font-size: 2.3rem;
+    color: var(--cor-titulo);
+}
+
+.titulo-secao p {
+    color: var(--cor-texto);
+    line-height: 1.7;
+}
+
+.cards-servicos {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.card-servico {
+    background: var(--cor-branca);
+    padding: 35px;
+    border-radius: 18px;
+    transition: .3s;
+    box-shadow: 0 8px 25px rgba(0,0,0,.05);
+}
+
+.card-servico:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 45px rgba(0,0,0,.10);
+}
+
+.icone-servico {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.card-servico h3 {
+    margin-bottom: 15px;
+    color: var(--cor-titulo);
+}
+
+.card-servico p {
+    color: var(--cor-texto);
+    line-height: 1.7;
+}
+
+/* ==========================================
+   SEÇÃO DIFERENCIAIS
+========================================== */
+
+.diferenciais {
+    padding: 100px 0;
+    background: var(--cor-branca);
+}
+
+.lista-diferenciais {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+}
+
+.item-diferencial {
+    padding: 35px;
+    border: 1px solid #e5e7eb;
+    border-radius: 18px;
+    background: #ffffff;
+    transition: all .3s ease;
+}
+
+.item-diferencial:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, .08);
+    border-color: var(--cor-primaria);
+}
+
+.icone-diferencial {
+    width: 70px;
+    height: 70px;
+    margin-bottom: 20px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 2rem;
+
+    background: rgba(0, 87, 255, .08);
+
+    border-radius: 50%;
+}
+
+.item-diferencial h3 {
+    margin-bottom: 15px;
+    color: var(--cor-titulo);
+}
+
+.item-diferencial p {
+    color: var(--cor-texto);
+    line-height: 1.7;
+}
