@@ -1,0 +1,60 @@
+/* ==========================================
+   RESPONSIVIDADE - MARCONEXT
+   Mobile First (Ajustes para telas menores)
+========================================== */
+
+/* Tablets */
+@media (max-width: 992px) {
+
+}
+
+/* Smartphones */
+@media (max-width: 768px) {
+
+}
+
+/* Smartphones pequenos */
+@media (max-width: 480px) {
+
+}
+
+/* ==========================================
+   HEADER RESPONSIVO
+========================================== */
+
+@media (max-width: 768px) {
+
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        height: 70px;
+    }
+
+    .menu-toggle {
+        display: flex;
+        margin-left: auto;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+}
+
+@media (max-width:768px){
+
+    .navbar{
+        height:70px;
+    }
+
+    .menu-toggle{
+        display:flex;
+    }
+
+    .nav-menu{
+        display:none;
+    }
+
+}
