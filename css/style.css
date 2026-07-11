@@ -152,6 +152,7 @@ section {
 
 }
 
+
 .navbar {
 
     display: flex;
@@ -254,6 +255,7 @@ section {
 .hero-image {
 
     flex: 1;
+   
 
 }
 
