@@ -163,6 +163,29 @@ section {
 }
 
 /* ===========================
+   MENU DESKTOP
+=========================== */
+
+.nav-menu{
+    display:flex;
+    align-items:center;
+    gap:2rem;
+}
+
+.nav-item{
+    list-style:none;
+}
+
+.nav-link{
+    font-weight:500;
+    transition:.3s;
+}
+
+.nav-link:hover{
+    color:var(--cor-primaria);
+}
+
+/* ===========================
    MENU DE NAVEGAÇÃO
 =========================== */
 
@@ -761,6 +784,10 @@ section {
 }
 
 @media (max-width: 768px) {
+    .menu-toggle{
+    display:flex;
+    flex-direction:column;
+}
 
     section {
         padding: 70px 0;
@@ -945,8 +972,11 @@ img:hover {
 .menu-toggle{
     display:none;
     flex-direction:column;
-    cursor:pointer;
+    justify-content:center;
     gap:6px;
+    cursor:pointer;
+    background:none;
+    border:none;
 }
 
 .menu-toggle span{
@@ -956,6 +986,10 @@ img:hover {
     border-radius:2px;
     transition:.3s;
 }
+
+
+
+
 
 /* ======================================================
    FUTURAS IMPLEMENTAÇÕES

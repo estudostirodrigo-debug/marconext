@@ -1,60 +1,182 @@
 /* ==========================================
    RESPONSIVIDADE - MARCONEXT
-   Mobile First (Ajustes para telas menores)
 ========================================== */
 
-/* Tablets */
+/* ==========================================
+   TABLETS
+========================================== */
+
 @media (max-width: 992px) {
 
-}
+    .hero .container,
+    .sobre .container{
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+    }
 
-/* Smartphones */
-@media (max-width: 768px) {
+    .hero-content,
+    .hero-image,
+    .sobre-conteudo,
+    .sobre-imagem{
+        max-width: 100%;
+    }
 
-}
+    .hero-buttons,
+    .hero-stats{
+        justify-content: center;
+    }
 
-/* Smartphones pequenos */
-@media (max-width: 480px) {
+    .cards-servicos,
+    .lista-diferenciais,
+    .cards-depoimentos,
+    .contato-grid{
+        grid-template-columns: 1fr;
+    }
 
 }
 
 /* ==========================================
-   HEADER RESPONSIVO
+   SMARTPHONES
 ========================================== */
 
-@media (max-width: 768px) {
+@media (max-width:768px){
 
-    .navbar {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-
-        height: 70px;
+    section{
+        padding:70px 0;
     }
 
-    .menu-toggle {
-        display: flex;
-        margin-left: auto;
+    .navbar{
+        height:70px;
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        position:relative;
     }
 
-    .nav-menu {
-        display: none;
+    /* Botão Hambúrguer */
+
+    .menu-toggle{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        gap:6px;
+        cursor:pointer;
+        margin-left:auto;
+    }
+
+    .menu-toggle span{
+        width:28px;
+        height:3px;
+        background:#222;
+        border-radius:2px;
+    }
+
+    /* Menu */
+
+    .nav-menu{
+
+        display:none;
+
+        position:absolute;
+
+        top:70px;
+        left:0;
+
+        width:100%;
+
+        background:#fff;
+
+        flex-direction:column;
+
+        align-items:center;
+
+        gap:20px;
+
+        padding:25px 0;
+
+        box-shadow:0 8px 20px rgba(0,0,0,.10);
+
+    }
+
+    .nav-menu.active{
+        display:flex;
+    }
+
+    .hero{
+        min-height:auto;
+        padding-top:120px;
+    }
+
+    .hero-content h1{
+        font-size:2.5rem;
+    }
+
+    .hero-content p{
+        font-size:1rem;
+    }
+
+    .titulo-secao h2,
+    .section-title h2,
+    .sobre-conteudo h2{
+        font-size:2rem;
+    }
+
+    .hero-buttons{
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .btn-primary,
+    .btn-secondary,
+    .btn-google,
+    .btn-contato{
+        width:100%;
+        max-width:320px;
+    }
+
+    .hero-stats{
+        flex-direction:column;
+        gap:25px;
+    }
+
+    .card-servico,
+    .item-diferencial,
+    .card-depoimento,
+    .info-item{
+        padding:25px;
     }
 
 }
 
-@media (max-width:768px){
+/* ==========================================
+   SMARTPHONES PEQUENOS
+========================================== */
 
-    .navbar{
-        height:70px;
+@media (max-width:480px){
+
+    .container{
+        width:92%;
+        padding:0 15px;
     }
 
-    .menu-toggle{
-        display:flex;
+    .hero-content h1{
+        font-size:2rem;
     }
 
-    .nav-menu{
-        display:none;
+    .hero-badge{
+        font-size:.8rem;
+        padding:6px 14px;
+    }
+
+    .titulo-secao h2,
+    .section-title h2,
+    .sobre-conteudo h2{
+        font-size:1.8rem;
+    }
+
+    .stat strong{
+        font-size:1.6rem;
     }
 
 }
