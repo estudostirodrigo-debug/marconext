@@ -265,6 +265,7 @@ section {
 
     flex: 1;
     max-width: 580px;
+   
 
 }
 
@@ -483,7 +484,7 @@ section {
 
 .sobre-imagem,
 .sobre-conteudo {
-    flex: 1;
+   flex-direction: row;
 }
 
 .sobre-imagem img {
