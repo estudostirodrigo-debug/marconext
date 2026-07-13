@@ -106,16 +106,22 @@ section {
    COMPONENTES GLOBAIS
 ====================================================== */
 
-.card-servico,
+.card-servico {
+     background: var(--cor-branca);
+    padding: 35px;
+    border: 2px solid transparent;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-hover);
+}
 .item-diferencial,
 .card-depoimento,
 .info-item {
 
     border-radius: var(--border-radius);
 
-    box-shadow: var(--shadow-default);
-
-    transition: var(--transition-default);
+    box-shadow: var(--shadow-hover);
+    
+    border: 2px solid transparent;
 
 }
 
@@ -124,9 +130,10 @@ section {
 .card-depoimento:hover,
 .info-item:hover {
 
-    transform: translateY(-8px);
-
+   
     box-shadow: var(--shadow-hover);
+    border-color: var(--cor-primaria);
+   
 
 }
 
@@ -171,6 +178,7 @@ section {
     display:flex;
     align-items:center;
     gap:2rem;
+    margin-left: 3rem;
 }
 
 .nav-item{
@@ -231,18 +239,26 @@ section {
 
     padding-top: 120px;
 
-    background: var(--cor-branca);
+    
+
+    background:
+    radial-gradient(circle at 75% 35%,
+  rgba(0,86,210,.10) 10%,
+  rgba(0,86,210,.05) 30%,
+    transparent 60%),
+    var(--cor-branca);
+
+    
 
 }
 
-.hero .container {
+ .hero .container {
 
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     gap: 7rem;
-
 }
 
 .hero-content {
@@ -255,9 +271,24 @@ section {
 .hero-image {
 
     flex: 1;
-   
+
+    display: flex;
+
+    justify-content: flex-end;
+
+    align-items: center;
 
 }
+
+
+.hero-image img {
+
+    width: 100%;
+    max-width: 750px;
+
+}
+
+
 
 .hero-content h1 {
 
@@ -399,7 +430,7 @@ section {
 
     background: var(--cor-secundaria);
 
-    transform: translateY(-3px);
+  
 
 }
 
@@ -553,7 +584,7 @@ section {
 .item-diferencial {
     padding: 35px;
     background: var(--cor-branca);
-    border: 1px solid #e5e7eb;
+    border: 2px solid #e5e7eb;
 }
 
 .item-diferencial:hover {
@@ -649,7 +680,7 @@ section {
 
     background: var(--cor-secundaria);
 
-    transform: translateY(-3px);
+       transform: translateY(-3px);
 
 }
 
@@ -766,7 +797,7 @@ section {
 
     .hero-content,
     .sobre-conteudo,
-    .hero-image,
+    .hero-image
     .sobre-imagem {
         max-width: 100%;
     }
@@ -950,9 +981,7 @@ a,
     transition: var(--transition-default);
 }
 
-img:hover {
-    transform: scale(1.02);
-}
+
 
 /* ======================================================
    OTIMIZAÇÕES
